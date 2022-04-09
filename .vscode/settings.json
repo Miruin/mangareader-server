@@ -1,0 +1,14 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "Manga Reader",
+      "database": "mangareader",
+      "username": "postgres",
+      "password": "123456Aa."
+    }
+  ]
+}
