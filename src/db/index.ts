@@ -6,7 +6,10 @@ import config from '../config';
 
 const env = process.env.NODE_ENV ?? "development";
 
-const pool = new Pool({ ...config.database[env], ssl: env === "production" });
+const pool = new Pool({
+  ...config.database[env],
+  ssl: env === "production" ? { rejectUnauthorized: false } : false,
+});
 
 const functions = Path.resolve(Path.join(__dirname, "./funciones"));
 const tables = Path.resolve(Path.join(__dirname, "./tablas"));
