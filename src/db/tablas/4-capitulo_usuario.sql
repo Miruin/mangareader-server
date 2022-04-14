@@ -6,7 +6,7 @@ create table if not exists capitulo_usuario(
     pagina bigint,
     fecha_visto timestamp,
     activo boolean,
-    capitulo boolean,
+    terminado boolean,
     constraint capitulo_usuario_capitulo_id_fk
         foreign key (capitulo_id)
             references capitulo(id),
