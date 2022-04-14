@@ -4,7 +4,7 @@ delete from rol where true;
 delete from permiso where true;
 
 -- temporal
-alter table captilo_usuario add column terminado boolean;
+alter table capitulo_usuario add column if not exists terminado boolean;
 
 insert into permiso (
     nombre,
