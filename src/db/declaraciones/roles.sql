@@ -69,3 +69,6 @@ from
     permiso p
 where
     p.clave in ('publicar_manga', 'administrar_manga');
+
+-- temporal
+alter table captilo_usuario add column terminado boolean;
