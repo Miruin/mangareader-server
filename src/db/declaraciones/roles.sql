@@ -3,6 +3,9 @@ delete from rol_usuario where true;
 delete from rol where true;
 delete from permiso where true;
 
+-- temporal
+alter table captilo_usuario add column terminado boolean;
+
 insert into permiso (
     nombre,
     descripcion,
@@ -69,6 +72,3 @@ from
     permiso p
 where
     p.clave in ('publicar_manga', 'administrar_manga');
-
--- temporal
-alter table captilo_usuario add column terminado boolean;
